@@ -1,5 +1,6 @@
 <?php
-
+// Массив-заготовка, который превращаем в json-строку
+/*
 $clients = [
 	[
 	'firstName' => 'Джон',
@@ -29,11 +30,11 @@ $clients = [
 	'phoneNumbers' => array ('+7 (903) 654-8477', '+7 (917) 096-4213')
 	]
 ];
-
+*/
 // превращаем массив в json-строку:
 //$tmp = json_encode($clients, JSON_UNESCAPED_UNICODE);
 //
-// копируем строку в отдельный файл:
+// выводим строку и копируем ее в отдельный файл:
 //echo $tmp."<br>";
 
 // превращаем строку json в массив:
@@ -164,7 +165,7 @@ thead {
 
 			<tbody>
 
-			<?php foreach ($clients as $client) { ?>
+			<?php foreach ($info as $client) { ?>
 				<tr>
 					<td><?php echo $client['firstName'];?></td>
 					<td><?php echo $client['lastName'];?></td>
